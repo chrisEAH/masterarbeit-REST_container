@@ -1,0 +1,10 @@
+{
+    "containerName": "opc-ua-client-counter1",
+    "command": "localhost:5000/opc-ua-client:latest -p 4334:4334 -p 1883:1883 npm start 'opc.tcp://DESKTOP-BMPPPBP:4334/OPCUA/SimulationServer' 'ns=5;s=Counter1' 'mqtt://127.0.0.1' 'Counter1'"
+}
+
+{
+    "containerName": "watchtower",
+    "command": "-v //var/run/docker.sock://var/run/docker.sock v2tec/watchtower"
+}
+

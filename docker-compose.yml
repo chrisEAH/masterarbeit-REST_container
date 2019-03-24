@@ -1,0 +1,10 @@
+container_manager_rest:
+  build: .
+  ports:
+      - '8085:8085'
+  environment:
+    - ENV=TEST
+    - host=localhost
+    - db_port=27017
+    - rest_port=8085
+    - db=container
